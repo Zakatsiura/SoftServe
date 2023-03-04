@@ -5,9 +5,11 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
+  height: 863px;
   text-align: center;
   color: aliceblue;
   background-image: url('img/background_mobile.png');
+  background-size: 417px;
   background-repeat: no-repeat;
 }
 .logo {
@@ -23,4 +25,50 @@ body {
   border-radius: 30px;
   font-size: 25px;
   background-color: #2091f9;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 19px;
+}
+.features-text {
+  margin-top: 19px;
+  font-size: 25px;
+}
+#video {
+  margin-top: 67px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.spacer {
+  margin-top: 67px;
+}
+.features-post-title {
+  width: 194px;
+  height: 56px;
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  /* flex: none; */
+  /* order: 0; */
+  /* flex-grow: 0; */
+  color: #252b42;
+}
+.features-post-text {
+  width: 231px;
+  height: 100px;
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  /* flex: none; */
+  /* order: 0; */
+  /* flex-grow: 0; */
 }
