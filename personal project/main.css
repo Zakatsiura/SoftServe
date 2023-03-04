@@ -1,10 +1,12 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 .wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 863px;
   text-align: center;
   color: aliceblue;
@@ -17,8 +19,23 @@ body {
   height: 58px;
   margin-top: 31px;
   margin-left: 25px;
+  margin-right: 206px;
+}
+.header_text {
+  width: 333px;
+  height: 165px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 55px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 .header_button {
+  margin-top: 69px;
   box-sizing: border-box;
   width: 236px;
   height: 52px;
@@ -26,16 +43,36 @@ body {
   font-size: 25px;
   background-color: #2091f9;
 }
+h2,
+.features {
+  margin-bottom: 0;
+}
 .features {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   margin-top: 19px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 55px;
+  letter-spacing: 0.2px;
+  color: #252b42;
+  /* flex: none; */
+  /* order: 0;
+  flex-grow: 0; */
 }
 .features-text {
   margin-top: 19px;
-  font-size: 25px;
+  /* font-size: 25px; */
+  width: 265px;
+  height: 80px;
+  /* font-family: 'Graphik'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
 }
 #video {
   margin-top: 67px;
@@ -48,10 +85,10 @@ body {
 .features-post-title {
   width: 194px;
   height: 56px;
-  font-family: 'Graphik';
+  /* font-family: 'Graphik'; */
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 28px;
   /* flex: none; */
   /* order: 0; */
@@ -61,7 +98,8 @@ body {
 .features-post-text {
   width: 231px;
   height: 100px;
-  font-family: 'Graphik';
+  margin-top: 20px;
+  /* font-family: 'Graphik'; */
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
