@@ -1,52 +1,62 @@
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .slider {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
 }
-.slider-container {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  width: 80vw;
+.slider__container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 70vw;
 }
 
-.slider-item {
-  flex-direction: column;
-  box-sizing: border-box;
-  border: 1px solid rgb(241, 231, 231);
-  padding: 8px;
-  margin: 5px;
-  width: 50%;
-  height: 400px;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 20px;
-  color: rgb(153, 157, 167);
+.slider__item {
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 1px solid rgb(241, 231, 231);
+    padding: 8px;
+    margin: 5px;
+    width: 50%;
+    height: 400px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    color: rgb(153, 157, 167);
 }
 
 .slider-next,
 .slider-prev {
-  position: relative;
-  background: transparent;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
+    position: relative;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
 }
 p {
-  margin: 0;
+    margin: 0;
 }
 
 .divider-component {
-  height: 3px;
-  width: 5%;
-  background-color: rgb(250, 217, 210);
+    height: 3px;
+    width: 5%;
+    background-color: rgb(250, 217, 210);
 }
 
 .bottom-date {
-  color: rgb(246, 125, 107);
+    color: rgb(246, 125, 107);
+}
+
+.clients__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider__item img {
+    width: 40px;
 }
