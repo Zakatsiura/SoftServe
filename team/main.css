@@ -50,7 +50,7 @@ p {
     float: left;
 }
 
-.ln {
+.arrow {
     width: 20px;
     height: 45px;
     color: rgb(81, 83, 88);
@@ -106,5 +106,6 @@ p {
 }
 
 .clients__section .bottom-text-block {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    color: rgb(246, 125, 107);
 }
