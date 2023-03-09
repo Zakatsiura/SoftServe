@@ -1,37 +1,32 @@
-const slider = document.querySelector('.slider');
-const container = slider.querySelector('.slider__container');
-const prevButton = slider.querySelector('.slider-prev');
-const nextButton = slider.querySelector('.slider-next');
-const items = container.querySelectorAll('.slider__item');
-let currentPage = 0;
+const boxList = document.getElementsByClassName('slider__container')[0];
+const boxChi = boxList.children;
+const len = boxChi.length;
+const lasts = document.getElementsByClassName('prev')[0];
+const nexts = document.getElementsByClassName('next')[0];
+let num = 1;
 
-function updateSlider() {
-    for (let i = 0; i < items.length; i++) {
-        if (i === currentPage || i === currentPage + 1) {
-            items[i].style.display = 'flex';
-        } else {
-            items[i].style.display = 'none';
-        }
+nexts.onmousedown = function () {
+    if (num == len - 2) {
+        boxList.style.transition = '0s';
+        num = 0;
+        boxList.style.left = num * -500 + 'px';
     }
-}
+};
+nexts.onmouseup = function () {
+    num++;
+    boxList.style.left = num * -500 + 'px';
+    boxList.style.transition = '0.5s';
+};
 
-function prevPage() {
-    currentPage--;
-    if (currentPage < 0) {
-        currentPage = items.length - 2;
+lasts.onmousedown = function () {
+    if (num == 0) {
+        boxList.style.transition = '0s';
+        num = len - 2;
+        boxList.style.left = num * -500 + 'px';
     }
-    updateSlider();
-}
-
-function nextPage() {
-    currentPage++;
-    if (currentPage > items.length - 2) {
-        currentPage = 0;
-    }
-    updateSlider();
-}
-
-prevButton.addEventListener('click', prevPage);
-nextButton.addEventListener('click', nextPage);
-
-updateSlider();
+};
+lasts.onmouseup = function () {
+    num--;
+    boxList.style.left = num * -500 + 'px';
+    boxList.style.transition = '0.5s';
+};

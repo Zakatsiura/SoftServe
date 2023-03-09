@@ -1,45 +1,32 @@
-const slider = document.querySelector('.slider');
-const slides = slider.querySelector('.slides');
-const prevBtn = slider.querySelector('.prev-btn');
-const nextBtn = slider.querySelector('.next-btn');
-const slideWidth = slider.offsetWidth / 2; // ширина одного слайда
-let position = 0; // текущая позиция слайдера
+const boxList = document.getElementsByClassName('slider__container')[0];
+const boxChi = boxList.children;
+const len = boxChi.length;
+const lasts = document.getElementsByClassName('last')[0];
+const nexts = document.getElementsByClassName('next')[0];
+let num = 1;
 
-// переносим последний слайд перед первым, чтобы реализовать зацикливание
-slides.insertBefore(slides.lastElementChild, slides.firstElementChild);
-
-// обработчик клика на кнопку "назад"
-prevBtn.addEventListener('click', () => {
-    position += slideWidth;
-    if (position > 0) {
-        // если дошли до первого слайда, переносим последний слайд перед ним
-        position = -(slides.offsetWidth - slideWidth);
-        slides.style.transform = `translateX(${position}px)`;
-        setTimeout(() => {
-            slides.style.transition = 'none';
-            position += slideWidth;
-            slides.style.transform = `translateX(${position}px)`;
-        }, 500);
-    } else {
-        slides.style.transition = 'transform 0.5s ease-in-out';
-        slides.style.transform = `translateX(${position}px)`;
+nexts.onmousedown = function () {
+    if (num == len - 2) {
+        boxList.style.transition = '0s';
+        num = 0;
+        boxList.style.left = num * -500 + 'px';
     }
-});
+};
+nexts.onmouseup = function () {
+    num++;
+    boxList.style.left = num * -500 + 'px';
+    boxList.style.transition = '0.5s';
+};
 
-// обработчик клика на кнопку "вперед"
-nextBtn.addEventListener('click', () => {
-    position -= slideWidth;
-    if (position < -(slides.offsetWidth - slideWidth)) {
-        // если дошли до последнего слайда, переносим первый слайд за ним
-        position = 0;
-        slides.style.transform = `translateX(${position}px)`;
-        setTimeout(() => {
-            slides.style.transition = 'none';
-            position -= slideWidth;
-            slides.style.transform = `translateX(${position}px)`;
-        }, 500);
-    } else {
-        slides.style.transition = 'transform 0.5s ease-in-out';
-        slides.style.transform = `translateX(${position}px)`;
+lasts.onmousedown = function () {
+    if (num == 0) {
+        boxList.style.transition = '0s';
+        num = len - 2;
+        boxList.style.left = num * -500 + 'px';
     }
-});
+};
+lasts.onmouseup = function () {
+    num--;
+    boxList.style.left = num * -500 + 'px';
+    boxList.style.transition = '0.5s';
+};
