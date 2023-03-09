@@ -3,11 +3,12 @@ body {
     padding: 0;
 }
 
-.slider__container {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    width: 70vw;
+.slider {
+    width: 1000px;
+    height: 300px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .slider__item {
@@ -30,15 +31,11 @@ p {
     margin: 0;
 }
 
-.slider {
-    width: 1000px;
-    height: 300px;
-    position: relative;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
 .slider__container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 70vw;
     width: 3500px;
     height: 100%;
     position: absolute;
