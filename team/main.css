@@ -11,6 +11,18 @@ body {
     overflow: hidden;
 }
 
+.slider__container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 2500px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -500px;
+    transition: 0.5s;
+}
+
 .slider__item {
     display: flex;
     flex-direction: column;
@@ -29,19 +41,6 @@ body {
 
 p {
     margin: 0;
-}
-
-.slider__container {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    width: 70vw;
-    width: 3500px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: -500px;
-    transition: 0.5s;
 }
 
 .slider__container > .slider__item {
