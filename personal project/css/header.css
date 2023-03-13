@@ -1,0 +1,41 @@
+#header {
+    height: 930px;
+    background-image: url('../img/backrgound-image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-wrapper {
+    color: white;
+}
+
+.header__nav {
+    display: flex;
+}
+.nav__menu {
+}
+
+.nav__menu-item {
+}
+
+.nav__menu-social {
+}
+
+.header__nav-background-picture {
+}
+
+.nav__menu-social img {
+}
+
+.header__block {
+}
+
+.header__block-title {
+}
+
+.header__block-text {
+}
+
+.header__button {
+}

@@ -1,10 +1,11 @@
-body {
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Graphik', sans-serif;
-    font-style: normal;
+    box-sizing: border-box;
+    /* font-family: 'Graphik', sans-serif;
+    font-style: normal; */
 }
-.wrapper {
+/* .wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -97,7 +98,7 @@ body {
     text-align: center;
     align-items: center;
     /* margin-top: -300px; */
-    font-style: normal;
+/* font-style: normal;
     font-weight: 400;
     font-size: 25px;
     line-height: 55px;
@@ -153,4 +154,4 @@ body {
 #video {
     margin-top: 67px;
     box-sizing: border-box;
-}
+} */
