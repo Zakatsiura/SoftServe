@@ -7,14 +7,16 @@
     color: var(--white-color);
 }
 
-.header-wrapper {
-}
+/* .header-wrapper {
+    reserved for mobile
+} */
 
 .header__nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
+
 .nav__menu {
     display: flex;
     justify-content: space-evenly;
@@ -24,6 +26,7 @@
 
 .nav__menu-item {
     color: var(--white-color);
+    text-decoration: none;
 }
 
 .nav__menu-social {
@@ -83,9 +86,11 @@
     background: var(--button-color);
     border-radius: 35px;
 }
+
 .header__button-text {
     color: var(--white-color);
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
+    text-decoration: none;
 }
