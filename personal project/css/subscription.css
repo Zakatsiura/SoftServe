@@ -1,0 +1,110 @@
+.subscription {
+    margin-top: 159px;
+}
+
+.subscription__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding: 43px 0px;
+    width: 1440px;
+    height: 725px;
+}
+.subscription__header-mobile {
+    display: none;
+}
+
+/* .subscription__header-desktop {
+} */
+
+.subscription__upper-text {
+    width: 173px;
+    height: 28px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+    color: var(--text-color);
+}
+
+.subscription__title {
+    width: 324px;
+    height: 110px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.2px;
+    color: var(--text-color);
+    margin: 17px 0 35px;
+}
+
+/* .subscription__text {
+}
+
+.subscription__subtext {
+} */
+
+.subscription__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .subscription__body-title {
+}
+
+.subscription__body-text {
+}
+
+.subscription__body-subtext {
+} */
+
+.subscription__form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 34px 0px;
+    gap: 12px;
+    width: 457px;
+    height: 126px;
+}
+
+.subscription__form-email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 19px 39px;
+    gap: 64px;
+    width: 273px;
+    height: 54px;
+    background: var(--form-input-color);
+    border: 1px solid var(--form-border-color);
+    border-radius: 39px;
+}
+
+.subscription__form-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 19px 38px;
+    gap: 10px;
+    width: 172px;
+    height: 58px;
+    color: var(--white-color);
+    background: var(--button-color);
+    border-radius: 35px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.subscription__image {
+    width: 677px;
+    height: 514px;
+}
+/* for mobile:
+.subscription__title-subtext {}
+*/
