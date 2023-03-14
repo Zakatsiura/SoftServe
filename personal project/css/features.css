@@ -1,0 +1,84 @@
+/* .features {
+}
+
+.features__block {
+} */
+
+.features-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.features__title {
+    width: 194px;
+    height: 55px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.2px;
+    color: var(--text-color);
+    margin: auto;
+    margin-top: 126px;
+}
+
+.features__text {
+    width: 532px;
+    height: 80px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: var(--second-text-color);
+    margin: 27px auto;
+}
+
+.features__video {
+    display: flex;
+    margin: auto;
+    width: 1177px;
+    height: 658px;
+    border-radius: 10px;
+}
+
+.features__opportunity {
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.opportunity__card {
+    margin-top: 97px;
+}
+
+.opportunity__icon {
+    margin: auto;
+    width: 45px;
+    margin-bottom: 27px;
+}
+
+.opportunity__card-title {
+    width: 194px;
+    height: 56px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.opportunity__card-text {
+    width: 231px;
+    height: 100px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    color: var(--second-text-color);
+    margin-bottom: 132px;
+}
